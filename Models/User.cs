@@ -20,8 +20,9 @@
     {
         public static List<UserModel> Users = new List<UserModel>()
         {
-            new UserModel() { Username = "dylan_admin", Password = "Hell0W0rld", Email = "john@doe.com", Address = "none", Phone = "123-4567" },
-            new UserModel() { Username = "alex_admin", Password = "Hell0W0rld", Email = "john@doe.com", Address = "none", Phone = "123-4567" },
+            new UserModel() { Username = "dylan_admin", Password = "Hell0W0rld", Email = "dylan@H.com", Address = "none", Phone = "12345" },
+            new UserModel() { Username = "alex_admin", Password = "Hell0W0rld", Email = "alex@P.com", Address = "none", Phone = "12345" },
+            new UserModel() { Username = "simon_admin", Password = "Hell0W0rld", Email = "simon@B.com", Address = "none", Phone = "12345" },
         };
     }
 }
