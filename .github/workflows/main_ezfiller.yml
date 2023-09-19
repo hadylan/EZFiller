@@ -30,7 +30,7 @@ jobs:
         working-directory: .
 
       - name: Generate Open API Specification Document
-        run: swagger tofile --output "./publish/swagger.json" "./bin/Release/net6.0/EZFiller.dll" "v1"
+        run: dotnet swagger tofile --output "./publish/swagger.json" "./bin/Release/net6.0/EZFiller.dll" "v1"
         working-directory: .
 
       - name: Setup SwashBuckle .NET Core
