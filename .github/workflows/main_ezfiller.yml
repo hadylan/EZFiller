@@ -23,7 +23,7 @@ jobs:
           include-prerelease: true
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release -f 6.0
+        run: dotnet build --configuration Release -f net6.0
 
       - name: Install Swashbuckle CLI .NET Global Tool
         run: dotnet tool install --global Swashbuckle.AspNetCore.Cli --version 6.0
