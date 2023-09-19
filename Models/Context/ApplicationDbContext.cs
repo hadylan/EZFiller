@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using EZFiller.Models;
 
 namespace EZFiller.Models.Context
 {
@@ -10,5 +11,11 @@ namespace EZFiller.Models.Context
 
         // Ajoutez vos DbSet pour chaque modèle ici
         public DbSet<UserModel> UserModel { get; set; }
+
+        // Ajoutez vos DbSet pour chaque modèle ici
+        public DbSet<PlayersModel> PlayersModel { get; set; }
+
+        // Ajoutez vos DbSet pour chaque modèle ici
+        public DbSet<ClubsModel> ClubsModel { get; set; }
     }
 }
