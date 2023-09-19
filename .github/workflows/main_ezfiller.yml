@@ -25,6 +25,15 @@ jobs:
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
+      - name: Generate Open API Specification Document
+        run: swagger tofile --output "./publish/swagger.json" "./bin/Release/net6.0/EZFiller.dll" "v1"
+        working-directory: .
+
+      - name: Setup SwashBuckle .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.5.0
+
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
