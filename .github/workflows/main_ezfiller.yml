@@ -23,6 +23,8 @@ jobs:
           dotnet-version: '6.0'
           include-prerelease: true
 
+      #TODO: add swagger + CLI
+
       - name: Build application
         run: dotnet build --configuration Release -f net6.0
 
