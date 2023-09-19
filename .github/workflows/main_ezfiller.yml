@@ -14,7 +14,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
@@ -22,7 +23,7 @@ jobs:
           dotnet-version: '6.0.22'
           include-prerelease: true
 
-      - name: Build with dotnet
+      - name: Build application
         run: dotnet build --configuration Release -f net6.0
 
       - name: Install Swashbuckle CLI .NET Global Tool
@@ -38,7 +39,7 @@ jobs:
         run: swagger tofile --output "./publish/swagger.json" "./bin/Release/net6.0/EZFiller.dll" "v1"
         working-directory: .
 
-      - name: dotnet publish
+      - name: Publish application
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
