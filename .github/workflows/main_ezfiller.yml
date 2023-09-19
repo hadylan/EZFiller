@@ -19,20 +19,20 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: '6.0.22'
           include-prerelease: true
 
       - name: Build with dotnet
         run: dotnet build --configuration Release -f net6.0
 
       - name: Install Swashbuckle CLI .NET Global Tool
-        run: dotnet tool install --global Swashbuckle.AspNetCore.Cli --version 6.0
+        run: dotnet tool install --global Swashbuckle.AspNetCore.Cli --version 6.0.22
         working-directory: .
 
       - name: Setup SwashBuckle .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 6.0.0
+          dotnet-version: 6.0.22
 
       - name: Generate Open API Specification Document
         run: swagger tofile --output "./publish/swagger.json" "./bin/Release/net6.0/EZFiller.dll" "v1"
