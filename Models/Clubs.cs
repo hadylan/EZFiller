@@ -12,9 +12,9 @@
     {
         public static List<ClubsModel> Users = new List<ClubsModel>()
         {
-            new ClubsModel() { Clubname = "dylan_admin", Country = "Hell0W0rld", League = "dylan@H.com" },
-            new ClubsModel() { Clubname = "alex_admin", Country = "Hell0W0rld", League = "alex@P.com" },
-            new ClubsModel() { Clubname = "simon_admin", Country = "Hell0W0rld", League = "simon@B.com" },
+            new ClubsModel() { Clubname = "Toulouse FC", Country = "France", League = "L1" },
+            new ClubsModel() { Clubname = "Olympique de Marseille ", Country = "France", League = "L1" },
+            new ClubsModel() { Clubname = "Paris Saint-Germain", Country = "France", League = "L1" },
         };
     }
 }

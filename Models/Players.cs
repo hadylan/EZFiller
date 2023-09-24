@@ -13,8 +13,9 @@
     {
         public static List<PlayersModel> Users = new List<PlayersModel>()
         {
-            new PlayersModel() { Id = 1, Name = "Marcus Rashford", Country = "England", Team = "Manchester United", Position = "Stricker" },
-            new PlayersModel() { Id = 2, Name = "Jadon Sancho", Country = "England", Team = "Manchester United", Position = "LW" },
+            new PlayersModel() { Name = "Marcus Rashford", Country = "England", Team = "Manchester United", Position = "Stricker" },
+            new PlayersModel() { Name = "Jadon Sancho", Country = "England", Team = "Manchester United", Position = "LW" },
+            new PlayersModel() { Name = "Thijs Dallinga", Country = "Netherlands", Team = "Toulouse FC", Position = "Stricker" },
         };
     }
 }
